@@ -5,7 +5,7 @@ let selectedIndex = 0;
 function rotateCarousel() {
   let angle = (selectedIndex / cellCount) * -360;
   console.log(angle, selectedIndex, cellCount);
-  carousel.style.transform = "translateZ(-253px) rotateY(" + angle + "deg)";
+  carousel.style.transform = "translateZ(-905px) rotateY(" + angle + "deg)";
 }
 const prevButton = document.querySelector(".previous-button");
 prevButton.addEventListener("click", function () {
