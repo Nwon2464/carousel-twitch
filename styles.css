@@ -16,3 +16,114 @@ html {
   height: 100%;
   width: 100%;
 }
+
+.scene {
+  width: 210px;
+  height: 140px;
+  border: 1px solid #ccc;
+
+  position: relative;
+  perspective: 1000px;
+  margin: 40px auto;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  transform: translateZ(-253px);
+
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.carousel__cell {
+  position: absolute;
+  width: 190px;
+  height: 120px;
+  left: 10px;
+  top: 10px;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+
+  line-height: 116px;
+
+  /* left: 10px; */
+  /* top: 10px; */
+}
+
+.carousel__cell:nth-child(1) {
+  transform: rotateY(0deg);
+}
+.carousel__cell:nth-child(2) {
+  transform: rotateY(45deg);
+}
+.carousel__cell:nth-child(3) {
+  transform: rotateY(90deg);
+}
+.carousel__cell:nth-child(4) {
+  transform: rotateY(135deg);
+}
+.carousel__cell:nth-child(5) {
+  transform: rotateY(180deg);
+}
+.carousel__cell:nth-child(6) {
+  transform: rotateY(225deg);
+}
+.carousel__cell:nth-child(7) {
+  transform: rotateY(270deg);
+}
+.carousel__cell:nth-child(8) {
+  transform: rotateY(315deg);
+}
+
+.carousel__cell:nth-child(1) {
+  transform: rotateY(0deg) translateZ(253px);
+}
+.carousel__cell:nth-child(2) {
+  transform: rotateY(45deg) translateZ(253px);
+}
+.carousel__cell:nth-child(3) {
+  transform: rotateY(90deg) translateZ(253px);
+}
+.carousel__cell:nth-child(4) {
+  transform: rotateY(135deg) translateZ(253px);
+}
+.carousel__cell:nth-child(5) {
+  transform: rotateY(180deg) translateZ(253px);
+}
+.carousel__cell:nth-child(6) {
+  transform: rotateY(225deg) translateZ(253px);
+}
+.carousel__cell:nth-child(7) {
+  transform: rotateY(270deg) translateZ(253px);
+}
+.carousel__cell:nth-child(8) {
+  transform: rotateY(315deg) translateZ(253px);
+}
+
+.carousel__cell:nth-child(8n + 1) {
+  background: hsla(0, 100%, 50%, 0.8);
+}
+.carousel__cell:nth-child(8n + 2) {
+  background: hsla(40, 100%, 50%, 0.8);
+}
+.carousel__cell:nth-child(8n + 3) {
+  background: hsla(80, 100%, 50%, 0.8);
+}
+.carousel__cell:nth-child(8n + 4) {
+  background: hsla(120, 100%, 50%, 0.8);
+}
+.carousel__cell:nth-child(8n + 5) {
+  background: hsla(160, 100%, 50%, 0.8);
+}
+.carousel__cell:nth-child(8n + 6) {
+  background: hsla(200, 100%, 50%, 0.8);
+}
+.carousel__cell:nth-child(8n + 7) {
+  background: hsla(240, 100%, 50%, 0.8);
+}
+.carousel__cell:nth-child(8n + 0) {
+  background: hsla(280, 100%, 50%, 0.8);
+}
